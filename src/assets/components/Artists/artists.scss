@@ -1,0 +1,162 @@
+.artists {
+    gap: 80px;
+    background-color: #464646;
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 10%;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 40px;
+
+        h3 {
+            color: #F9F9F9;
+            font-family: Montserrat;
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 130%;
+        }
+        
+        p {
+            color: #F9F9F9;
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+
+        button {
+            border: none;
+            display: flex;
+            padding: 18px 34px;
+            align-items: center;
+            gap: 12px;
+            border-radius: 8px;
+            background: #F9F9F9;
+            box-shadow: 0px 20px 100px 0px rgba(34, 34, 34, 0.15);
+            color: #222;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+
+    .img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+        
+        .item-01 {
+            display: flex;
+            align-items: end;
+            gap: 30px;
+            flex-direction: column;
+
+            img {
+                width: 100%;  
+            }
+
+            img:nth-child(1) {
+                box-shadow: 
+                10px -10px 40px -20px #c6d4e7,
+                -10px 10px 40px -20px #a8292fee;
+                border-radius: 24px;
+            } 
+            
+            img:nth-child(2) {
+                box-shadow: 
+                10px -10px 40px -20px #00136A,
+                -10px 10px 40px -20px #08cef6;
+                border-radius: 24px;                
+            }
+        }
+        
+        .item-02 {
+            flex-direction: column;
+            display: flex;
+            gap: 30px;
+            
+            img {
+                width: 100%;
+            }
+
+            img:nth-child(1) {
+                box-shadow: 
+                10px -10px 40px -20px #0a9fdac2,
+                -10px 10px 40px -20px #a8292fee;
+                border-radius: 24px;
+            } 
+
+            img:nth-child(2) {
+                box-shadow: 
+                -10px -10px 40px -20px #03464D,
+                10px 10px 40px -10px #FCFAA7;
+                border-radius: 24px;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .artists {
+        .img {
+            gap: 60px;
+
+            .item-01 {
+                flex-direction: row;
+                
+                img:nth-child(1) {
+                    margin-bottom: -20px;
+                    width: 370px;
+                    height: 270px;
+                } 
+                
+                img:nth-child(2) {
+                    width: 270px;
+                    height: 300px;
+                } 
+            }
+            
+            .item-02 {
+                flex-direction: row;
+                
+                img:nth-child(1) {
+                    width: 270px;
+                    height: 300px;
+                } 
+
+                img:nth-child(2) {
+                    margin-top: -20px;
+                    width: 370px;
+                    height: 270px;
+                }
+            }
+        }
+    } 
+}
+
+@media (min-width: 1280px) {
+    .artists {
+        flex-direction: row;
+        
+        .content {
+            width: 470px;
+        }
+
+        .img {
+            width: auto;
+        }
+    }
+}
