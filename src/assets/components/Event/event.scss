@@ -22,7 +22,7 @@
     .day {
         display: flex;
         align-items: flex-start;
-        gap: 20px;
+        gap: 30px;
 
         button {
             cursor: pointer;
@@ -63,47 +63,6 @@
         .active {
             opacity: 1;
             color: #222;
-        }
-    }
-
-    .tabela {
-        display: flex;
-        flex-direction: column;
-        border: 2px solid #F9F9F9;
-        border-radius: 24px;
-        width: 1170px;
-        
-        .row {
-            border-bottom: 2px solid #F9F9F9;
-            padding: 30px;
-            gap: 30px;
-            display: flex;
-        }
-
-        .row div:nth-child(1) {
-            width: 230px;
-            background-color: red;
-        }
-        
-        .row div:nth-child(2) {
-            width: 370px; 
-            background-color: green;
-        }
-
-        .row div:nth-child(3) {
-            display: flex;
-            align-items:  start;
-            gap: 10px;
-            background-color: blue;
-            width: 230px;
-        }
-
-        .row div:nth-child(4) {
-            width: 220px;
-            background-color: purple;
-            align-items: center;
-            justify-content: end;
-            display: flex;
         }
     }
 }

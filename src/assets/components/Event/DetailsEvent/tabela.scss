@@ -1,0 +1,71 @@
+.tabela {
+    display: flex;
+    flex-direction: column;
+    border-radius: 24px;
+    width: 1170px;
+
+    .details {
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
+        border-top: 1px solid #F9F9F9;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        background-color: #5c5c5c;
+        font-size: 20px;
+        display: flex;
+        gap: 30px;
+        padding: 40px;
+
+        div:nth-child(1) { width: 230px; }
+        div:nth-child(2) { width: 370px; }
+    }
+
+    .row {
+        border: 1px solid #F9F9F9;
+        padding: 40px;
+        gap: 30px;
+        display: flex;
+
+        div:nth-child(1) { width: 230px; }
+        div:nth-child(2) { width: 370px; }
+
+        .artist {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            width: 250px;
+
+            div {
+                display: flex;
+                gap: 10px;
+
+                img {
+                    width: 56px;
+                    height: 56px;
+                    border-radius: 50%;
+                }
+
+                div {
+                    flex-direction: column;
+
+                    h2 {
+                        font-size: 19px;
+                    }
+
+                    span {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+        div:nth-child(4) {
+            width: 150px;
+            display: flex;
+            gap: 10px;
+            justify-content: end;
+            align-items: center;
+        }
+    }
+}
