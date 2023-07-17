@@ -5,77 +5,102 @@ export default function DetailsEvent({ activeDay }) {
     const eventDetails = [
         [
             {
-                time: '07:00 PM to 09:00 PM',
+                time: '11:00 AM to 12:00 PM',
                 description:
-                    'Uma noite de jazz com a talentosa cantora e saxofonista, Laura Santos. Delicie-se com sua voz suave e os solos envolventes de saxofone enquanto ela interpreta clássicos do jazz e músicas originais. Prepare-se para uma experiência musical inesquecível!',
+                    'Desfrute de uma performance emocionante com Yui Ronald, um artista solo que encanta o público com sua voz cativante e letras inspiradoras. Prepare-se para uma noite de músicas envolventes e momentos emocionantes.',
                 artists: [
                     {
-                        name: 'Laura Santos',
-                        booth: 'Booth: 7A45',
-                        image: '../../public/img/Avatar(5).svg'
+                        name: 'yui Ronals',
+                        booth: '2F12',
+                        image: '../../public/img/Avatar(6).svg'
                     }
                 ],
 
                 type: 'Previa',
-                icon: '../../public/Icons/Clock.svg'
+                icon: '../../public/Icons/Play(2).svg'
                 
             },
             {
-                time: '09:00 PM to 10:00 PM',
+                time: '12:00 PM to 03:00 PM',
                 description:
-                    'O duo "Acoustic Vibes" vai te encantar com seu estilo acústico e harmonias vocais emocionantes. Deixe-se levar pelas melodias suaves e pela atmosfera intimista enquanto eles tocam uma seleção de músicas pop, folk e indie. Uma noite perfeita para os amantes da música.',
+                    'O trio que vai levar você a uma jornada musical com suas harmonias vocais encantadoras e arranjos instrumentais cativantes. Prepare-se para desfrutar de um repertório diversificado que abrange diversos estilos musicais e emocione seus sentidos.',
                 artists: [
                     {
-                        name: 'Julia Mendes',
-                        booth: 'Booth: 2D31',
-                        image: '../../public/img/Avatar(4).svg'
+                        name: 'yui Ronals',
+                        booth: '2F12',
+                        image: '../../public/img/Avatar(6).svg'
                     },
                     {
-                        name: 'Julia Mendes',
-                        booth: 'Booth: 2D31',
-                        image: '../../public/img/Avatar(4).svg'
+                        name: 'Emma Satoshi',
+                        booth: '2A35',
+                        image: '../../public/img/Avatar(5).svg'
                     },
                     {
-                        name: 'Pedro Silva',
-                        booth: 'Booth: 8C19',
-                        image: '../../public/img/Avatar(4).svg'
+                        name: 'Bob John',
+                        booth: '3G12',
+                        image: '../../public/img/Avatar(7).svg'
                     }
                 ],
 
-                type: 'Previa',
-                icon: '../../public/Icons/Clock.svg'
+                type: 'AO VIVO',
+                icon: '../../public/Icons/Live Camera.svg'
             },
             {
-                time: '10:00 PM to 12:00 AM',
+                time: '03:00 PM to 04:00 AM',
                 description:
-                    'Prepare-se para uma explosão de energia com a banda de rock "Wildfire". Com riffs de guitarra poderosos, vocais intensos e uma presença de palco eletrizante, eles vão agitar a plateia com seus sucessos e músicas autorais. Não perca essa performance enérgica!',
+                    'A dupla que vai conquistar seu coração com sua música cativante e performances cheias de energia. Com sua sintonia perfeita e talento extraordinário, eles criarão um ambiente envolvente e contagiarão o público com seu estilo musical único.',
                 artists: [
                     {
-                        name: 'Camila Costa',
-                        booth: 'Booth: 5H26',
+                        name: 'Sasha Jackson',
+                        booth: '5H26',
                         image: '../../public/img/Avatar(4).svg'
                     },
                     {
-                        name: 'Camila Costa',
-                        booth: 'Booth: 9G13',
-                        image: '../../public/img/Avatar(4).svg'
+                        name: 'Diana Brock',
+                        booth: '2F24',
+                        image: '../../public/img/Avatar(3).svg'
                     }
                 ],
 
-                type: 'Previa',
+                type: 'Em Breve',
                 icon: '../../public/Icons/Clock.svg'
             }
         ],
 
         [
             {
-                time: '07:00 PM to 09:00 PM',
+                time: '12:00 PM to 03:00 PM',
                 description:
-                    'Uma noite de jazz com a talentosa cantora e saxofonista, Laura Santos. Delicie-se com sua voz suave e os solos envolventes de saxofone enquanto ela interpreta clássicos do jazz e músicas originais. Prepare-se para uma experiência musical inesquecível!',
+                    'O trio musical composto por DJ Snake, Camila Cabello e Ed Sheeran irá conduzi-lo por uma incrível jornada sonora, envolvendo harmonias vocais encantadoras e arranjos instrumentais cativantes. Prepare-se para se deleitar com um repertório diversificado, abrangendo diversos estilos musicais que certamente irão emocionar seus sentidos.',
                 artists: [
                     {
-                        name: 'Laura Santos',
-                        booth: 'Booth: 7A45',
+                        name: 'Dj Snake',
+                        booth: '2D31',
+                        image: '../../public/img/DjSnake.jpg'
+                    },
+                    {
+                        name: 'Camila Cabello',
+                        booth: '5B52',
+                        image: '../../public/img/CamilaCabello.jpg'
+                    },
+                    {
+                        name: 'Ed Sheeran',
+                        booth: '2F35',
+                        image: '../../public/img/EdSheeran.jpg'
+                    }
+                ],
+    
+                type: 'AO VIVO',
+                icon: '../../public/Icons/Live Camera.svg'
+            },
+            {
+                time: '03:00 PM to 04:00 PM',
+                description:
+                    'Encante-se com a incrível performance de Billie Eilish, uma artista versátil que traz uma fusão única de estilos musicais. Deixe-se envolver pela sua voz cativante e pelas batidas envolventes enquanto ela apresenta suas músicas originais e interpretações únicas.',
+                artists: [
+                    {
+                        name: 'Billie Eilish',
+                        booth: '7A45',
                         image: '../../public/img/BillieEilish.jpg'
                     }
                 ],
@@ -84,48 +109,23 @@ export default function DetailsEvent({ activeDay }) {
                 icon: '../../public/Icons/Clock.svg'
             },
             {
-                time: '09:00 PM to 10:00 PM',
+                time: '04:00 PM to 18:00 AM',
                 description:
-                    'O duo "Acoustic Vibes" vai te encantar com seu estilo acústico e harmonias vocais emocionantes. Deixe-se levar pelas melodias suaves e pela atmosfera intimista enquanto eles tocam uma seleção de músicas pop, folk e indie. Uma noite perfeita para os amantes da música.',
+                    'Prepare-se para uma explosão de energia com Dua Lipa e Katy Perry! Essas artistas incríveis vão incendiar o palco com vocais poderosos, coreografias cativantes e presença de palco eletrizante. Com pop envolvente e letras cativantes, elas vão agitar a plateia com seus sucessos e músicas autorais.',
                 artists: [
-                    {
-                        name: 'Julia Mendes',
-                        booth: 'Booth: 2D31',
-                        image: '../../public/img/DjSnake.jpg'
-                    },
-                    {
-                        name: 'Julia Mendes',
-                        booth: 'Booth: 2D31',
-                        image: '../../public/img/CamilaCabello.jpg'
-                    },
                     {
                         name: 'Dua Lipa',
-                        booth: 'Booth: 2F35',
-                        image: '../../public/img/EdSheeran.jpg'
-                    }
-                ],
-
-                type: 'Previa',
-                icon: '../../public/Icons/Clock.svg'
-            },
-            {
-                time: '10:00 PM to 12:00 AM',
-                description:
-                    'Prepare-se para uma explosão de energia com a banda de rock "Wildfire". Com riffs de guitarra poderosos, vocais intensos e uma presença de palco eletrizante, eles vão agitar a plateia com seus sucessos e músicas autorais. Não perca essa performance enérgica!',
-                artists: [
-                    {
-                        name: 'Gabriel Fernandes',
-                        booth: 'Booth: 5H26',
+                        booth: '5H26',
                         image: '/../../public/img/DuaLipa.jpg'
                     },
                     {
-                        name: 'Camila Costa',
-                        booth: 'Booth: 9G13',
-                        image: '../../public/img/Eminem.jpg'
+                        name: 'Katy Perry',
+                        booth: '4D13',
+                        image: '../../public/img/KatyPerry.jpg'
                     }
                 ],
 
-                type: 'Previa',
+                type: 'Em Breve',
                 icon: '../../public/Icons/Clock.svg'
             }
         ],
@@ -134,57 +134,62 @@ export default function DetailsEvent({ activeDay }) {
             {
                 time: '07:00 PM to 09:00 PM',
                 description:
-                    'Uma noite de jazz com a talentosa cantora e saxofonista, Laura Santos. Delicie-se com sua voz suave e os solos envolventes de saxofone enquanto ela interpreta clássicos do jazz e músicas originais. Prepare-se para uma experiência musical inesquecível!',
+                    'E para finalizar, junte-se a Harry Styles e Ariana Grande para uma noite de pura magia musical! Esses artistas carismáticos e talentosos vão hipnotizar a plateia com suas performances arrebatadoras e vocais impressionantes. Com músicas cativantes e personalidades únicas.',
                 artists: [
                     {
-                        name: 'Laura Santos',
-                        booth: 'Booth: 7A45',
+                        name: 'Harry Styles',
+                        booth: '7A45',
                         image: '../../public/img/HarryStyles.jpg'
+                    },
+                    {
+                        name: 'Ariana Grande',
+                        booth: '3C45',
+                        image: '../../public/img/ArianaGrande.jpg'
+                    }
+                ],
+
+                type: 'Em Breve',
+                icon: '../../public/Icons/Clock.svg'
+            },
+            {
+                time: '09:00 PM to 11:00 PM',
+                description:
+                    'Prepare-se para uma explosão de energia com Eminem e Rihanna! Esses artistas incríveis vão incendiar o palco com letras afiadas, rimas rápidas e performances eletrizantes. Com seu estilo único e carisma inegável, eles vão agitar a plateia com seus sucessos e colaborações marcantes.',
+                artists: [
+                    {
+                        name: 'Eminem',
+                        booth: '9G13',
+                        image: '../../public/img/Eminem.jpg'
+                    },
+                    {
+                        name: 'Rihanna',
+                        booth: '8C19',
+                        image: '../../public/img/Rihanna.jpg'
                     }
                 ],
 
                 type: 'Previa',
-                icon: '../../public/Icons/Clock.svg'
+                icon: '../../public/Icons/Play(2).svg'
             },
             {
-                time: '09:00 PM to 10:00 PM',
+                time: '11:00 PM to 01:00 AM',
                 description:
-                    'O duo "Acoustic Vibes" vai te encantar com seu estilo acústico e harmonias vocais emocionantes. Deixe-se levar pelas melodias suaves e pela atmosfera intimista enquanto eles tocam uma seleção de músicas pop, folk e indie. Uma noite perfeita para os amantes da música.',
+                    'Agora, prepare-se para uma experiência musical emocionante com Zayn e Shawn Mendes! Esses talentosos artistas vão encantar o público com suas vozes incríveis e canções apaixonantes. Com seu talento excepcional e presença magnética, eles vão levar você a uma jornada musical inesquecível.',
                 artists: [
                     {
-                        name: 'Julia Mendes',
-                        booth: 'Booth: 2D31',
-                        image: '../../public/img/KatyPerry.jpg'
+                        name: 'Zyan',
+                        booth: '5H26',
+                        image: '/../../public/img/Zyan.jpg'
                     },
                     {
-                        name: 'Pedro Silva',
-                        booth: 'Booth: 8C19',
-                        image: '../../public/img/Rag-n-BoneMan.jpg'
-                    }
-                ],
-
-                type: 'Previa',
-                icon: '../../public/Icons/Clock.svg'
-            },
-            {
-                time: '10:00 PM to 12:00 AM',
-                description:
-                    'Prepare-se para uma explosão de energia com a banda de rock "Wildfire". Com riffs de guitarra poderosos, vocais intensos e uma presença de palco eletrizante, eles vão agitar a plateia com seus sucessos e músicas autorais. Não perca essa performance enérgica!',
-                artists: [
-                    {
-                        name: 'Gabriel Fernandes',
-                        booth: 'Booth: 5H26',
-                        image: '/../../public/img/Rihanna.jpg'
-                    },
-                    {
-                        name: 'Camila Costa',
-                        booth: 'Booth: 9G13',
+                        name: 'Shawn Mendes',
+                        booth: '2C17',
                         image: '../../public/img/ShawnMendes.jpg'
                     }
                 ],
 
-                type: 'Previa',
-                icon: '../../public/Icons/Clock.svg'
+                type: 'AO VIVO',
+                icon: '../../public/Icons/Live Camera.svg'
             }
         ]
     ];
@@ -207,11 +212,11 @@ export default function DetailsEvent({ activeDay }) {
 
             {eventDetails[activeDay].map((event, index) => (
                 <div className="row" key={index}>
-                    <div>
+                    <div className='time'>
                         <p>{event.time}</p>
                     </div>
 
-                    <div>
+                    <div className='description'>
                         <p>{event.description}</p>
                     </div>
 
@@ -221,14 +226,14 @@ export default function DetailsEvent({ activeDay }) {
                                 <img src={artist.image} alt={artist.name} />
                                 <div>
                                     <h2>{artist.name}</h2>
-                                    <span>{artist.booth}</span>
+                                    <h3>Booth: <span>{artist.booth}</span></h3>
                                 </div>
                             </div>
                         ))}
                     </div>
 
                     <div>
-                        <p>{event.type}</p>
+                        <p className={event.type === 'AO VIVO' ? 'aovivo' : ''}>{event.type}</p>
                         <img src={event.icon} alt="" srcset="" />
                     </div>
                 </div>

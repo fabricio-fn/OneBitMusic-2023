@@ -17,7 +17,9 @@ const Event = () => {
 
     return (
         <div className="event">
-            <h3>Programação</h3>
+            <div className='tittle'>
+                <h3>Programação</h3>
+            </div>
 
             <div className="day">
                 {days.map((day, index) => (
