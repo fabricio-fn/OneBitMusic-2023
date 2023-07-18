@@ -1,0 +1,65 @@
+.sponsors {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 60px;
+    padding: 1rem 10%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #5C5C5C;
+    color: #fff;
+
+    h3 {
+        color: #F9F9F9;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+    }
+
+    .logo {
+        width: 1170px;
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+
+        img {
+            width: 190px;
+        }
+    }
+
+    button {
+        display: inline-flex;
+        padding: 18px 34px;
+        align-items: center;
+        gap: 12px;
+        border-radius: 8px;
+        background: #F9F9F9;
+        box-shadow: 0px 20px 100px 0px rgba(34, 34, 34, 0.15);
+        cursor: pointer;
+        border: none;
+        color: #222;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+
+@media (max-width: 1168px) {
+    .sponsors {
+        .logo {
+            width: 100%;
+
+            img {
+                width: 170px;
+            }
+        }
+    }
+}
