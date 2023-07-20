@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './header.scss';
+import Button from '../Button/Button';
 
 export default function Header() {
     const [showMenu, setShowMenu] = useState(true)
@@ -70,21 +71,28 @@ export default function Header() {
 
             {showMenu ? (
                 <nav>
-                    <a href="">INICIO</a>
-                    <a href="">ARTISTAS</a>
-                    <a href="">PROGRAMAÇÃO</a>
-                    <a href="">CONTATO</a>
-                    <a className='btn' href="">COMPRAR INGRESSOS</a>
+                    <a href="#home">INICIO</a>
+                    <a href="#artists">ARTISTAS</a>
+                    <a href="#event">PROGRAMAÇÃO</a>
+                    <a href="#contact">CONTATO</a>
+                    <Button 
+                        text="COMPRAR INGRESSOS"
+                        classStyle="btnHeader"
+                    />
                 </nav>
             ) : null}
 
-            <button className='btnMenu' onClick={ToggleMenu}>
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    height="2em" viewBox="0 0 448 512">
-                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-                    fill="#fefefe"/>
-                </svg>
-            </button>
+            <Button 
+                icon={
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        height="2em" viewBox="0 0 448 512">
+                        <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+                        fill="#fefefe"/>
+                    </svg>
+                }
+                on_Click={ToggleMenu}
+                classStyle="btnMenu"
+            />
         </header>
     )
 }

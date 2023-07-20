@@ -7,13 +7,13 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #5C5C5C;
-    color: #fff;
+    background-color: var(--additional3);
+    color: var(--generalLight);
 
     h3 {
-        color: #F9F9F9;
+        color: var(--generalLight);
         text-align: center;
-        font-family: Montserrat;
+        font-family: var(--fontFamilyPrimary);
         font-size: 34px;
         font-style: normal;
         font-weight: 700;
@@ -39,12 +39,12 @@
         align-items: center;
         gap: 12px;
         border-radius: 8px;
-        background: #F9F9F9;
+        background: var(--generalLight);
         box-shadow: 0px 20px 100px 0px rgba(34, 34, 34, 0.15);
         cursor: pointer;
         border: none;
-        color: #222;
-        font-family: Montserrat;
+        color: var(--generalDark);
+        font-family: var(--fontFamilyPrimary);
         font-size: 16px;
         font-style: normal;
         font-weight: 700;

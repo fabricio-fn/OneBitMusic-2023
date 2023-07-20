@@ -8,14 +8,14 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    color: white;
+    color: var(--generalLight);
 
     .tittle {
         width: 1170px;
         h3 {
             text-align: start;
-            color: #F9F9F9;
-            font-family: Montserrat;
+            color: var(--generalLight);
+            font-family: var(--fontFamilyPrimary);
             font-size: 34px;
             font-style: normal;
             font-weight: 700;
@@ -37,21 +37,21 @@
             width: 370px;
             background-color: transparent;
             border: none;
-            color: #F9F9F9;
+            color: var(--generalLight);
             height: 82px;
-            border-bottom: 4px solid #222;
+            border-bottom: 4px solid var(--generalDark);
             
             opacity: .5;
-            color:#F9F9F9;
-            font-family: Montserrat;
+            color:var(--generalLight);
+            font-family: var(--fontFamilyPrimary);
             font-size: 24px;
             font-weight: 800;
             line-height: 38px;
             transition: 400ms;
             
             span {
-                color: #222;
-                font-family: Montserrat;
+                color: var(--generalDark);
+                font-family: var(--fontFamilyPrimary);
                 font-size: 16px;
                 font-weight: 700;
                 line-height: normal;
@@ -60,18 +60,19 @@
 
         button:hover {
             opacity: 1;
-            color: #222;
+            color: var(--generalDark);
         }
         
         .active {
             opacity: 1;
-            color: #222;
+            color: var(--generalDark);
         }
     }
 }
 
 @media (max-width: 768px) {
     .event {
+        padding: 1rem 5%;
         .day {
             flex-direction: column;
 

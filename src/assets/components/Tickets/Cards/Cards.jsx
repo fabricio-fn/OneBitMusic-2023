@@ -1,3 +1,4 @@
+import Button from "../../Button/Button";
 import "./cards.scss";
 
 export default function Cards({ title, R$, p1, p2, p3, button, cardStyle }) {
@@ -18,7 +19,9 @@ export default function Cards({ title, R$, p1, p2, p3, button, cardStyle }) {
             </div>
 
             <div className="button">
-                <button>{ button }</button>
+                <Button
+                    text={button}
+                />
             </div>
         </div>
     )

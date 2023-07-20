@@ -1,3 +1,4 @@
+import Button from "../Button/Button"
 import "./sponsors.scss"
 
 export default function Sponsors() {
@@ -17,7 +18,7 @@ export default function Sponsors() {
             </div>
 
             <div>
-                <button>Se torne um investidor</button>
+                <Button text="Se torne um investidor"/>
             </div>
         </section>
     )

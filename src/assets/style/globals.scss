@@ -2,9 +2,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 #root {
     display: flex;
     flex-direction: column;
+}
+
+
+:root {
+    --additional1: #fefefe;
+    --additional2: #464646;
+    --additional3: #5c5c5c;
+    --generalLight: #f9f9f9;
+    --generalDark: #222222;
+    --generalRed: #f64348;
+
+
+    --fontFamilyPrimary: 'Montserrat', sans-serif;
+    --fontFamilySecondary: 'Raleway', sans-serif;
+    --fontFamilyLogo: 'Poppins', sans-serif;
+    // --font-size-small: 14px;
+    // --font-size-medium: 16px;
+    // --font-size-large: 20px;
+    // --font-weight-normal: 400;
+    // --font-weight-bold: 700;
 }

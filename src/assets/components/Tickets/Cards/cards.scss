@@ -1,5 +1,5 @@
 .cardItem {
-    border-top: 4px solid #222;
+    border-top: 4px solid var(--generalDark);
     border-radius: 20px;
     display: flex;
     padding-bottom: 0px;
@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     gap: 26px;
-    background-color: #f9f9f9;
+    background-color: var(--generalLight);
     width: 370px;
     height: 404px;
     box-shadow: 0px 20px 100px 0px rgba(34, 34, 34, 0.15);
@@ -15,15 +15,15 @@
     padding:  0 .5rem;
 
     .tittle {
-        color: #222;
+        color: var(--generalDark);
         display: flex;
         flex-direction: column;
         gap: 15px;
 
         h3 {
-            color: #222;
+            color: var(--generalDark);
             text-align: center;
-            font-family: Montserrat;
+            font-family: var(--fontFamilyPrimary);
             font-size: 24px;
             font-style: normal;
             font-weight: 800;
@@ -31,9 +31,9 @@
         }
 
         h4 {
-            color: var(--general-dark, #222);
+            color: var(--general-dark, var(--generalDark));
             text-align: center;
-            font-family: Montserrat;
+            font-family: var(--fontFamilyPrimary);
             font-size: 60px;
             font-weight: 700;
         }
@@ -47,8 +47,8 @@
         gap: 15px;
 
         p {
-            color: #222;
-            font-family: Raleway;
+            color: var(--generalDark);
+            font-family: var(--fontFamilySecondary);
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -66,9 +66,9 @@
             gap: 12px;
             display: flex;
             border-radius: 5px;
-            border: 1px solid #222;
-            color: #222;
-            font-family: Montserrat;
+            border: 1px solid var(--generalDark);
+            color: var(--generalDark);
+            font-family: var(--fontFamilyPrimary);
             font-size: 16px;
             font-style: normal;
             font-weight: 700;
@@ -78,29 +78,29 @@
 }
 
 .vip {
-    color: #F64348;
-    border-top: 4px solid #F64348;
+    color: var(--generalRed);
+    border-top: 4px solid var(--generalRed);
     
     .tittle {
         h3 {
-            color: #F64348;
+            color: var(--generalRed);
         }
 
         h4 {
-            color: #F64348;
+            color: var(--generalRed);
         }
     }
 
     .content {  
         p {
-            color: #F64348;
+            color: var(--generalRed);
         }
     }
 
     .button {   
         button {
-            color: #F64348;
-            border: 1px solid #F64348;
+            color: var(--generalRed);
+            border: 1px solid var(--generalRed);
         }
     }
 }
@@ -110,8 +110,8 @@
     .button {
         
         button {
-            color: white;
-            background-color: #222;
+            color: var(--generalLight);
+            background-color: var(--generalDark);
         }
     }
 }

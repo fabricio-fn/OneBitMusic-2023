@@ -1,0 +1,21 @@
+.contact {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    background-color: var(--additional2);
+    min-height: calc(662px - 120px);
+
+}
+
+@media (max-width: 768px) {
+    .contact {
+        gap: 40px;
+        flex-direction: column;
+
+        .left, form {
+            height: auto;
+            padding: 1rem 5%;
+            width: 100%;
+        }
+    }
+}

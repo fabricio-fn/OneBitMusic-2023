@@ -1,10 +1,8 @@
-@import "../../style/variables.scss";
-
 .header {
     width: 100%;
     height: 100px;
     max-width: 1920px;
-    color: #fff;
+    // color: #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,8 +18,8 @@
             justify-content: center;
             align-items: center;
             width: 137px;
-            color: #E4E4E4;
-            font-family: Poppins;
+            color: var(--additional1);
+            font-family: var(--fontFamilyLogo);
             font-size: 19.13px;
             font-style: normal;
             font-weight: 400;
@@ -29,8 +27,8 @@
         }
 
         span {
-            color: #F64348;
-            text-decoration: underline #F64348;
+            color: var(--generalRed);
+            text-decoration: underline;
         }
     }
 
@@ -40,8 +38,8 @@
         gap: 40px;
 
         a {
-            color: #FEFEFE;
-            font-family: Montserrat;
+            color: var(--additional1);
+            font-family: var(--fontFamilyPrimary);
             font-size: 14px;
             font-style: normal;
             font-weight: 600;
@@ -49,12 +47,14 @@
             text-decoration: none;
         }
 
-        .btn {
+        .btnHeader {
+            border: none;
+            cursor: pointer;
             padding: 18px 34px;
             border-radius: 8px;
-            background: #FEFEFE;
-            color: #222;
-            font-family: Montserrat;
+            color: var(--additional1);
+            color: var(--generalDark);
+            font-family: var(--fontFamilyPrimary);
             font-size: 16px;
             font-weight: 700;
         }
@@ -90,6 +90,7 @@
 
 @media (max-width: 768px) {
     .header {
+        padding: 1rem 5%;
         height: 50px;
         
         nav {
@@ -100,7 +101,7 @@
             padding: 20px;
             flex-direction: column;
             width: 100%;   
-            background-color: #464646;
+            background-color: var(--additional2);
         }
 
         .btnMenu {

@@ -3,7 +3,7 @@ import "./tickets.scss"
 
 export default function Tickets() {
     return (
-        <section className="tickets">
+        <section id="tickets" className="tickets">
             <div className="tittle">
                 <h2>Escolha o tipo de ingresso</h2>
             </div>

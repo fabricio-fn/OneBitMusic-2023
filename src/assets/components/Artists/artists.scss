@@ -1,6 +1,6 @@
 .artists {
     gap: 80px;
-    background-color: #464646;
+    background-color: var(--additional2);
     min-height: 100vh;
     display: flex;
     width: 100%;
@@ -17,8 +17,8 @@
         gap: 40px;
 
         h3 {
-            color: #F9F9F9;
-            font-family: Montserrat;
+            color: var(--generalLight);
+            font-family: var(--fontFamilyPrimary);
             font-size: 34px;
             font-style: normal;
             font-weight: 700;
@@ -26,8 +26,8 @@
         }
         
         p {
-            color: #F9F9F9;
-            font-family: Raleway;
+            color: var(--generalLight);
+            font-family: var(--fontFamilySecondary);
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -35,16 +35,18 @@
         }
 
         button {
+            cursor: pointer;
+            padding: 18px 34px;
             border: none;
             display: flex;
-            padding: 18px 34px;
+            flex-direction: row-reverse;
             align-items: center;
             gap: 12px;
             border-radius: 8px;
-            background: #F9F9F9;
+            background: var(--generalLight);
             box-shadow: 0px 20px 100px 0px rgba(34, 34, 34, 0.15);
-            color: #222;
-            font-family: Montserrat;
+            color: var(--generalDark);
+            font-family: var(--fontFamilyPrimary);
             font-size: 16px;
             font-weight: 700;
         }
@@ -111,6 +113,7 @@
 
 @media (min-width: 768px) {
     .artists {
+        padding: 1rem 5%;
         .img {
             gap: 60px;
 

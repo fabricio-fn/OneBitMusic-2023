@@ -1,0 +1,32 @@
+.left {
+    width: 44%;
+    height: 662px;
+    flex-shrink: 0;
+    background-color: var(--generalDark);
+    padding: 5rem;
+
+    h3 {
+        color: var(--additional1);
+        font-family: var(--fontFamilyPrimary);
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+    }
+
+    .details {
+        margin-top: 5rem;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+
+        p {
+            color: var(--additional1);
+            text-align: right;
+            font-family: var(--fontFamilyPrimary);
+            font-size: 16px;
+            font-weight: 700;
+        }
+    }
+}

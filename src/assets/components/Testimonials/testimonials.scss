@@ -4,15 +4,15 @@
     gap: 60px;
     width: 100%;
     min-height: 100vh;
-    background: #464644;
+    background-color: var(--additional3);
     justify-content: center;
-    color: white;
+    color: var(--generalLight);
     overflow: hidden;
 
     h3 {
-        color: #F9F9F9;
+        color: var(--generalLight);
         text-align: center;
-        font-family: Montserrat;
+        font-family: var(--fontFamilyPrimary);
         font-size: 34px;
         font-style: normal;
         font-weight: 700;
@@ -29,7 +29,7 @@
             width: 770px;
             border-radius: 8px;
             padding: 1rem;
-            background: #222;
+            background: var(--generalDark);
 
             p {
                 text-align: center;
@@ -50,9 +50,9 @@
             }
 
             h3 {
-                color: #F9F9F9;
+                color: var(--generalLight);
                 text-align: center;
-                font-family: Montserrat;
+                font-family: var(--fontFamilyPrimary);
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 800;
@@ -60,9 +60,9 @@
             }
 
             span {
-                color: #F9F9F9;
+                color: var(--generalLight);
                 text-align: center;
-                font-family: Raleway;
+                font-family: var(--fontFamilySecondary);
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
@@ -76,7 +76,7 @@
     .testimonials {
         .item {
             .content {
-                width: 100%;
+                width: 90%;
             }
         }
     }
