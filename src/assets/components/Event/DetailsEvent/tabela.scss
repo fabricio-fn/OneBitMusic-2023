@@ -13,15 +13,19 @@
         gap: 30px;
         padding: 40px;
 
-        div > h3 {
-            font-family: var(--fontFamilySecondary);
-            font-size: 24px;
-            font-style: normal;
-            font-weight: 700;
-        }
+        div {
+            h3 {
+                font: 700 24px var(--fontFamilySecondary);
+            }
 
-        div:nth-child(1) { width: 230px; }
-        div:nth-child(2) { width: 370px; }
+            &:nth-child(1) {
+                width: 230px;
+            }
+
+            &:nth-child(2) {
+                width: 370px;
+            }
+        }
     }
 
     .row {
@@ -30,22 +34,16 @@
         border-top: 1px solid var(--generalLight);
         display: flex;
 
-        .time {
-            width: 230px;
-            color: var(--generalLight);
-            font-family: var(--fontFamilySecondary);
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 24px;
-        }
-
+        .time,
         .description {
-            width: 370px;
             color: var(--generalLight);
-            font-family: var(--fontFamilySecondary);
-            font-size: 16px;
+            font: 400 16px/24px var(--fontFamilySecondary);
+            width: 230px;
+        }
+        
+        .description {
             font-weight: 700;
-            line-height: 24px;
+            width: 370px !important;
         }
 
         .artist {
@@ -70,21 +68,13 @@
 
                     h2 {
                         color: var(--generalLight);
-                        font-family: var(--fontFamilySecondary);
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: 24px;
+                        font: 700 16px var(--fontFamilySecondary);
                     }
 
                     h3 {
                         opacity: .5;
                         color: var(--generalLight);
-                        font-family: var(--fontFamilySecondary);
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: 24px;
+                        font: 400 16px/24px var(--fontFamilySecondary);
 
                         span {
                             font-weight: 700;
@@ -101,9 +91,7 @@
             justify-content: flex-end;
             align-items: center;
             color: var(--generalLight);
-            font-family: var(--fontFamilyPrimary);
-            font-size: 16px;
-            font-weight: 700;
+            font: 700 16px var(--fontFamilyPrimary);
         }
 
         .aovivo {
@@ -114,6 +102,12 @@
     @media (max-width: 480px) {
         .details {
             flex-direction: column;
+        }
+        
+        .row {
+            .description {
+                width: 100% !important;
+            }
         }
     }
 
@@ -131,7 +125,9 @@
             width: 100%;
             flex-direction: column;
 
-            div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4) { width: 100%; }
+            div:nth-child(1), div:nth-child(2), div:nth-child(3), div:nth-child(4) {
+                width: 100%;
+            }
 
             div:nth-child(4) {
                 justify-content: flex-start;

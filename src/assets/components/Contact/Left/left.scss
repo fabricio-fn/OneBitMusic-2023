@@ -7,11 +7,7 @@
 
     h3 {
         color: var(--additional1);
-        font-family: var(--fontFamilyPrimary);
-        font-size: 34px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 130%;
+        font: 700 34px/130% var(--fontFamilyPrimary);
     }
 
     .details {
@@ -24,9 +20,7 @@
         p {
             color: var(--additional1);
             text-align: right;
-            font-family: var(--fontFamilyPrimary);
-            font-size: 16px;
-            font-weight: 700;
+            font: 700 16px var(--fontFamilyPrimary);
         }
     }
 }

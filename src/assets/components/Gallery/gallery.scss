@@ -7,18 +7,15 @@
     flex-direction: column;
     gap: 60px;
     width: 100%;
+    max-width: 1920px;
     color: var(--generalLight);
     overflow: hidden;
-    
+
     .titleTop {
         padding: 1rem 10%;
 
         h3 {
-            font-family: var(--fontFamilyPrimary);
-            font-size: 34px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 130%;
+            font: 700 34px/130% var(--fontFamilyPrimary);
         }
     }
 
@@ -34,11 +31,11 @@
             display: flex;
             flex-direction: column;
             width: 370px;
-    
+
             .icons {
                 display: flex;
                 gap: 40px;
-    
+
                 .heartIcon, .chatIcon {
                     display: flex;
                     cursor: pointer;
@@ -46,30 +43,18 @@
                     align-items: center;
 
                     span {
-                        font-family: var(--fontFamilyPrimary);
-                        font-size: 16px;
-                        font-style: normal;
-                        font-weight: 700;
-                        line-height: normal;
+                        font: 700 16px/normal var(--fontFamilyPrimary);
                     }
                 }
             }
 
             h3, p {
-                color: var(--generalLight);
-                font-family: var(--fontFamilySecondary);
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 24px;
+                font: 400 16px/24px var(--fontFamilySecondary);
             }
         }
     }
 
-}
-
-@media (max-width: 400px) {
-    .gallery {
+    @media (max-width: 400px) {     
         .titleTop {
             h3 {
                 font-size: 24px;

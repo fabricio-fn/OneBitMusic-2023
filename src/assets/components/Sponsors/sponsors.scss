@@ -11,13 +11,8 @@
     color: var(--generalLight);
 
     h3 {
-        color: var(--generalLight);
         text-align: center;
-        font-family: var(--fontFamilyPrimary);
-        font-size: 34px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 130%;
+        font: 700 34px/130% var(--fontFamilyPrimary);
     }
 
     .logo {
@@ -44,16 +39,10 @@
         cursor: pointer;
         border: none;
         color: var(--generalDark);
-        font-family: var(--fontFamilyPrimary);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
+        font: 700 16px/normal var(--fontFamilyPrimary);
     }
-}
 
-@media (max-width: 1168px) {
-    .sponsors {
+    @media (max-width: 1168px) {
         .logo {
             width: 100%;
 

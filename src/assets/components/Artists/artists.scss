@@ -7,7 +7,7 @@
     flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
-    padding: 1rem 10%;
+    padding: 1rem 5%;
 
     .content {
         display: flex;
@@ -18,20 +18,12 @@
 
         h3 {
             color: var(--generalLight);
-            font-family: var(--fontFamilyPrimary);
-            font-size: 34px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 130%;
+            font: 700 34px/130% var(--fontFamilyPrimary);
         }
-        
+
         p {
             color: var(--generalLight);
-            font-family: var(--fontFamilySecondary);
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 24px;
+            font: 400 16px/24px var(--fontFamilySecondary);
         }
 
         button {
@@ -46,9 +38,7 @@
             background: var(--generalLight);
             box-shadow: 0px 20px 100px 0px rgba(34, 34, 34, 0.15);
             color: var(--generalDark);
-            font-family: var(--fontFamilyPrimary);
-            font-size: 16px;
-            font-weight: 700;
+            font: 700 16px var(--fontFamilyPrimary);
         }
     }
 
@@ -59,101 +49,83 @@
         flex-direction: column;
         width: 100%;
         gap: 30px;
-        
+
+        img {
+            width: 100%;
+            border-radius: 24px;
+        }
+
         .item-01 {
             display: flex;
             align-items: end;
             gap: 30px;
             flex-direction: column;
 
-            img {
-                width: 100%;  
+            img:nth-child(1) {
+                box-shadow: 10px -10px 40px -20px #c6d4e7, -10px 10px 40px -20px #a8292fee;
             }
 
-            img:nth-child(1) {
-                box-shadow: 
-                10px -10px 40px -20px #c6d4e7,
-                -10px 10px 40px -20px #a8292fee;
-                border-radius: 24px;
-            } 
-            
             img:nth-child(2) {
-                box-shadow: 
-                10px -10px 40px -20px #00136A,
-                -10px 10px 40px -20px #08cef6;
-                border-radius: 24px;                
+                box-shadow: 10px -10px 40px -20px #00136A, -10px 10px 40px -20px #08cef6;
             }
         }
-        
+
         .item-02 {
             flex-direction: column;
             display: flex;
             gap: 30px;
-            
-            img {
-                width: 100%;
-            }
 
             img:nth-child(1) {
-                box-shadow: 
-                10px -10px 40px -20px #0a9fdac2,
-                -10px 10px 40px -20px #a8292fee;
-                border-radius: 24px;
-            } 
+                box-shadow: 10px -10px 40px -20px #0a9fdac2, -10px 10px 40px -20px #a8292fee;
+            }
 
             img:nth-child(2) {
-                box-shadow: 
-                -10px -10px 40px -20px #03464D,
-                10px 10px 40px -10px #FCFAA7;
-                border-radius: 24px;
+                box-shadow: -10px -10px 40px -20px #03464D, 10px 10px 40px -10px #FCFAA7;
             }
         }
     }
-}
 
-@media (min-width: 768px) {
-    .artists {
-        padding: 1rem 5%;
+    @media (min-width: 768px) {
+        padding: 1rem 10%;
+
         .img {
             gap: 60px;
 
             .item-01 {
                 flex-direction: row;
-                
+
                 img:nth-child(1) {
-                    margin-bottom: -20px;
                     width: 370px;
                     height: 270px;
-                } 
-                
-                img:nth-child(2) {
-                    width: 270px;
-                    height: 300px;
-                } 
-            }
-            
-            .item-02 {
-                flex-direction: row;
-                
-                img:nth-child(1) {
-                    width: 270px;
-                    height: 300px;
-                } 
+                    margin-bottom: -20px;
+                }
 
                 img:nth-child(2) {
-                    margin-top: -20px;
+                    width: 270px;
+                    height: 300px;
+                }
+            }
+
+            .item-02 {
+                flex-direction: row;
+
+                img:nth-child(1) {
+                    width: 270px;
+                    height: 300px;
+                }
+
+                img:nth-child(2) {
                     width: 370px;
                     height: 270px;
+                    margin-top: -20px;
                 }
             }
         }
-    } 
-}
+    }
 
-@media (min-width: 1280px) {
-    .artists {
+    @media (min-width: 1280px) {
         flex-direction: row;
-        
+
         .content {
             width: 470px;
         }

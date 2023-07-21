@@ -1,8 +1,16 @@
+import { useEffect } from "react";
 import Button from "../Button/Button"
 import Header from "../Header/Header"
 import './home.scss'
+import { startCountdown } from "./startCountdown"
 
 export default function Home() {
+  const targetDate = new Date().getTime() + 5 * 24 * 60 * 60 * 1000;
+
+  useEffect(() => {
+    startCountdown(targetDate)
+  });
+  
   return (
     <section id="home" className="home">
       <Header />
