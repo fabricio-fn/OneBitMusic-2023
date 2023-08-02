@@ -73,18 +73,6 @@
         -webkit-text-stroke: 2px var(--additional1);
     }
 
-    .fixedHeader {
-        position: fixed;
-        top: 0;
-        transition: 400ms;
-        background-color: var(--additional2);
-        box-shadow: 0px 0px 20px var(--additional2);
-    }
-
-    .backgroundHeader {
-        background-color: var(--additional2);
-    }
-
     @media (max-width: 1140px) {
         .content {
             padding: 0 14.5%;
