@@ -3,7 +3,7 @@
 </h1>
 <div>
   <h2>
-      Esse projeto foi desenvolvido durante a primeira edição do hackthon da <a href="https://github.com/OneBitCodeBlog">OneBitCode</a>
+      Esse projeto foi desenvolvido durante a primeira edição do hackthon da <a href="https://github.com/OneBitCodeBlog" target="_blank">OneBitCode</a>
       <br>
       <br>
       Como irá funcionar?            
@@ -42,4 +42,6 @@
   </h4>
 </div>
 
-![image](https://github.com/fabricio-fn/OneBitMusic/assets/116690430/078225ab-2cd9-4bcc-ac96-0c713d580430)
+<h2>Veja o resultado <a href="https://onebitmusic.netlify.app/" target="_blank">aqui</a></h2>
+
+![image3](https://github.com/fabricio-fn/OneBitMusic-2023/assets/116690430/d3d34207-9e90-458f-8b57-a489afa86db1)
