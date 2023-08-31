@@ -2,12 +2,12 @@
     Apresentação do projeto OneBitMusic
 </h1>
 <div>
-  <h2>
+  <h4>
       Esse projeto foi desenvolvido durante a primeira edição do hackthon da <a href="https://github.com/OneBitCodeBlog" target="_blank">OneBitCode</a>
       <br>
       <br>
       Como irá funcionar?            
-  </h2>
+  </h4>
   <h4>
       Live de abertura e apresentação para os alunos dia 03/07/2023 às 19:00
       <br>
@@ -55,7 +55,7 @@
       <a href="https://vitejs.dev/">Vite</a>
    </li>
     <li>
-      <a href="https://styled-components.com/">Sass/Scss</a>
+      <a href="https://sass-lang.com/">Sass/Scss</a>
    </li>
 </ul>
 
