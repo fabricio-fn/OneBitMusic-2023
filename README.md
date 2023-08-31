@@ -41,6 +41,24 @@
       Agradeço desde já e aguardo ansiosamente para discutir mais detalhes sobre essa oportunidade de trabalho
   </h4>
 </div>
+<h2>
+    Tecnologias que usei
+</h2>
+<ul>
+   <li>
+      <a href="https://react.dev/">React</a>
+   </li>
+    <li>
+      <a href="https://react-slick.neostack.com/">React Slick</a>
+   </li>
+   <li>
+      <a href="https://vitejs.dev/">Vite</a>
+   </li>
+    <li>
+      <a href="https://styled-components.com/">Sass/Scss</a>
+   </li>
+</ul>
+
 
 <h2>Veja o resultado <a href="https://onebitmusic.netlify.app/" target="_blank">aqui</a></h2>
 
